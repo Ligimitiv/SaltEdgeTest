@@ -22,7 +22,7 @@ bash 'source_install' do
         tar -zxf ruby-2.7.6.tar.gz
         cd ruby-2.7.6/ && ./configure && make && make install
     EOH
-    action :nothing
+    action :run
 end
 
 # Updating Bundle gem for errbit installation

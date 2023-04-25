@@ -16,6 +16,6 @@ describe service('errbit.service') do
     it { should be_running }
 end
 
-describe port("#{node['errbit']['addr']}", "#{node['errbit']['port']}") do
+describe port(3000) do
     it { should be_listening }
 end
